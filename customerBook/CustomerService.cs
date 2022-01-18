@@ -109,6 +109,9 @@ namespace customerBook
         public int ViewSelectedById()
         {
             Customer resoult = SelectFirstElementById();
+            if (resoult.Loc == null) { 
+                return -1;
+            }
             resoult.View();
             return 1;
         }

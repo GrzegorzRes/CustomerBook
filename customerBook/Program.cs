@@ -18,7 +18,7 @@ namespace customerBook
             var mainMenu = menuActionService.GetMenuActionByName("Main");
             int resoult = 1;
             int operation;
-            while (resoult > 0)
+            while (resoult > -1)
             {
                 try
                 {
@@ -37,7 +37,7 @@ namespace customerBook
                         2 => customerService.ViewSelectedById(),
                         3 => customerService.AddNewCustomer(),
                         4 => customerService.DeleteCustomerById(),
-                        5 => -1,
+                        5 => -2,
                         _ => throw new ArgumentException(message: "Invalid select"),
                     };
                 }
