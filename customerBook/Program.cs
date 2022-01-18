@@ -58,6 +58,7 @@ namespace customerBook
             menuActionService.AddMenuAction(2, "Main", "View selected customer");
             menuActionService.AddMenuAction(3, "Main", "Add customer");
             menuActionService.AddMenuAction(4, "Main", "Delete customer");
+            menuActionService.AddMenuAction(5, "Main", "Exit");
 
             return menuActionService;
         }
