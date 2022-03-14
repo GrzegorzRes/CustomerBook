@@ -17,7 +17,7 @@
 #### - view customers
 
 ## Screenshots
-![Main menu screen](ss/screen1.png)
+![Main menu screen](./ss/screen1.png)
 
 ## Changes
 ### v1.0-Refactoring:
