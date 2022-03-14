@@ -1,12 +1,10 @@
-﻿using System;
+﻿using customerBook.Domain.Common;
 
 
-namespace customerBook
+namespace customerBook.Domain.Entity
 {
-    public abstract class Customer
+    public abstract class Customer : BaseEntity
     {
-        
-        public int Id { get; set; }
         public Location Loc { get; set; }
         public virtual void View()
         {

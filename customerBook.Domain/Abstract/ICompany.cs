@@ -1,8 +1,7 @@
-﻿using System;
-
-namespace customerBook
+﻿
+namespace customerBook.Domain.Abstract
 {
-    internal interface ICompany
+    interface ICompany
     {
         string Name { get; set; }
         string NIP { get; set; }

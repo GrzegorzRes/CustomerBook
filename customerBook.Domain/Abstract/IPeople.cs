@@ -1,11 +1,8 @@
-﻿using System;
-
-namespace customerBook
+﻿namespace customerBook.Domain.Abstract
 {
-    internal interface IPeople
+    interface IPeople
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
     }
 }

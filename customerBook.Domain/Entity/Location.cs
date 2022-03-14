@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace customerBook
+namespace customerBook.Domain.Entity
 {
     public class Location
     {
