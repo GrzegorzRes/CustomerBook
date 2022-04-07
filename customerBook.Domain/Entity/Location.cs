@@ -12,7 +12,10 @@ namespace customerBook.Domain.Entity
 
         public Location()
         {
-
+            Township = "-";
+            Street = "-";
+            Number = "-";
+            ZipCode = "-";
         }
         public void View()
         {

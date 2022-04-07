@@ -14,6 +14,5 @@ namespace customerBook.App.Abstract
         int AddItem(T item);
         int EditItem(T beforeEditItem, T afterEditItem);
         void RemoveItem(T item);
-
     }
 }

@@ -5,5 +5,10 @@ namespace customerBook.Domain.Common
     {
         public int Id { get; set; }
 
+        public BaseEntity()
+        {
+            Id = 0;
+        }
+
     }
 }

@@ -15,6 +15,7 @@ namespace customerBook.App.Common
 
         public int AddItem(T item)
         {
+            item.Id = GetLastId() + 1;
             Items.Add(item);
             return item.Id;
         }

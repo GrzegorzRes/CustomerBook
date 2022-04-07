@@ -134,5 +134,11 @@ namespace customerBook.App.Managers
             _customerService.DeleteCustomerById(id);
             return id;
         }
+
+        public Customer GetCustomerById(int id)
+        {
+            var customer = _customerService.SelectFirstElementById(id);
+            return customer;
+        }
     }
 }

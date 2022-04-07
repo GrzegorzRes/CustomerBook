@@ -12,7 +12,7 @@ namespace customerBook.App.Concrete
         public int ViewSelectedById(int id)
         {
             Customer resoult = SelectFirstElementById(id);
-            if (resoult.Loc == null)
+            if (resoult.Id == 0)
             {
                 return -1;
             }
@@ -26,7 +26,7 @@ namespace customerBook.App.Concrete
             {
                 customer.View();
             }
-            return 3;
+            return 1;
         }
 
         public int DeleteCustomerById(int id)
