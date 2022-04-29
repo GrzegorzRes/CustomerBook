@@ -12,6 +12,7 @@ namespace customerBook.App.Abstract
         List<T> Items { get; set; }
         List<T> GetAllItems();
         int AddItem(T item);
+        void AddAllItem(List<T> item);
         int EditItem(T beforeEditItem, T afterEditItem);
         void RemoveItem(T item);
     }

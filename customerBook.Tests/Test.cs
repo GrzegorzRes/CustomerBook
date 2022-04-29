@@ -39,6 +39,7 @@ namespace customerBook.Tests
         {
             //Arrange
             Customer customer = new Company("nameCompany", "12345678");
+            customer.Loc = new Location();
             CustomerService customerService = new CustomerService();
 
             //Act
@@ -59,6 +60,7 @@ namespace customerBook.Tests
         {
             //Arrange
             Customer customer = new Person("firstName", "lastName");
+            customer.Loc = new Location();
             CustomerService customerService = new CustomerService();
 
             //Act

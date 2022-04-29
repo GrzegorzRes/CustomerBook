@@ -1,4 +1,5 @@
 ﻿
+
 namespace customerBook.Domain.Common
 {
     public class BaseEntity
@@ -8,6 +9,10 @@ namespace customerBook.Domain.Common
         public BaseEntity()
         {
             Id = 0;
+        }
+        public BaseEntity(int id)
+        {
+            Id = id;
         }
 
     }

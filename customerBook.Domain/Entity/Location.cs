@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Xml.Serialization;
 
 namespace customerBook.Domain.Entity
 {
@@ -16,6 +16,13 @@ namespace customerBook.Domain.Entity
             Street = "-";
             Number = "-";
             ZipCode = "-";
+        }
+        public Location(string township,string street,string number, string zipcode)
+        {
+            Township = township;
+            Street = street;
+            Number = number;
+            ZipCode = zipcode;
         }
         public void View()
         {

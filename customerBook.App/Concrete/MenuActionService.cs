@@ -33,14 +33,20 @@ namespace customerBook.App.Concrete
                 Console.WriteLine($"{menuItem.Id}. {menuItem.Text}");
             }
         }
-
+        public int AddItem(MenuAction item)
+        {
+            Items.Add(item);
+            return item.Id;
+        }
         private void Initialize()
         {
             AddItem(new MenuAction(1, "Main", "View all customers/person/company"));
             AddItem(new MenuAction(2, "Main", "View selected customer"));
             AddItem(new MenuAction(3, "Main", "Add customer"));
             AddItem(new MenuAction(4, "Main", "Delete customer"));
-            AddItem(new MenuAction(5, "Main", "Exit"));
+            AddItem(new MenuAction(5, "Main", "Save"));
+            AddItem(new MenuAction(6, "Main", "Load"));
+            AddItem(new MenuAction(7, "Main", "Exit"));
 
             AddItem(new MenuAction(1, "AddCustomer", "Company"));
             AddItem(new MenuAction(2, "AddCustomer", "Person"));

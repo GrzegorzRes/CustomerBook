@@ -20,6 +20,11 @@ namespace customerBook.App.Common
             return item.Id;
         }
 
+        public void AddAllItem(List<T> item)
+        {
+            Items.AddRange(item);
+        }
+
         public int EditItem(T beforeEditItem, T afterEditItem)
         {
             RemoveItem(beforeEditItem);

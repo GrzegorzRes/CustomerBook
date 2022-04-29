@@ -6,14 +6,14 @@ namespace customerBook.Domain.Entity
     {
         public Location Loc { get; set; }
 
+        public Customer()
+        {
+        }
+        
         public virtual void View()
         {
             Loc.View();
         }
 
-        public void Return(Customer customer)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

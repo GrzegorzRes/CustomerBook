@@ -1,4 +1,5 @@
 ﻿using customerBook.App.Common;
+using customerBook.App.Concrete.IO;
 using customerBook.Domain.Entity;
 
 namespace customerBook.App.Concrete
@@ -39,12 +40,10 @@ namespace customerBook.App.Concrete
 
         public Customer SelectFirstElementById(int id)
         {
-            foreach (Customer customer in Items)
+            var item = Items.Where(p => p.Id == id).FirstOrDefault();
+            if(item != null)
             {
-                if (customer.Id == id)
-                {
-                    return customer;
-                }
+                return item;
             }
             return new Company();
         }

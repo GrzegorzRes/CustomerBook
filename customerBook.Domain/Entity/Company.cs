@@ -1,4 +1,5 @@
 ﻿using customerBook.Domain.Abstract;
+using System.Xml.Serialization;
 
 namespace customerBook.Domain.Entity
 {
@@ -14,6 +15,13 @@ namespace customerBook.Domain.Entity
         }
         public Company(string name, string nip)
         {
+            Name = name;
+            NIP = nip;
+        }
+        public Company(string name, string nip, Location loc, int id):base()
+        {
+            Id = id;
+            Loc = loc;
             Name = name;
             NIP = nip;
         }
